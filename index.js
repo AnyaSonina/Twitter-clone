@@ -8,7 +8,6 @@ if(tweetsFromLS && tweetsFromLS.length > 0) {
      newTweetData = tweetsFromLS
 }else if(!tweetsFromLS) {
     newTweetData = tweetsData
-    render()
 }
 
 document.addEventListener('click', function(e){

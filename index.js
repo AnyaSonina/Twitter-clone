@@ -6,9 +6,12 @@ let newTweetData = tweetsData
 
 if(tweetsFromLS.length > 0) {
     newTweetData = tweetsFromLS
-}else if(tweetsFromLS.length === 0) {
-    newTweetData = tweetsData
 }
+// if(tweetsFromLS.length > 0) {
+//     newTweetData = tweetsFromLS
+// }else if(tweetsFromLS.length === 0) {
+//     newTweetData = tweetsData
+// }
 
 document.addEventListener('click', function(e){
     if(e.target.dataset.like){

@@ -18,16 +18,18 @@ document.addEventListener('click', function(e){
         handleRetweetClick(e.target.dataset.retweet)
     }
     else if(e.target.dataset.reply){
-        handleReplyClick(e.target.dataset.reply)
-        
+        handleReplyClick(e.target.dataset.reply)        
     }
     else if(e.target.id === 'tweet-btn'){
         handleTweetBtnClick()
-    }else if(e.target.dataset.delete) {
+    }
+    else if(e.target.dataset.delete) {
         deleteTweet(e.target.dataset.delete)
-    }else if(e.target.dataset.comment) {
+    }
+    else if(e.target.dataset.comment) {
          handleCommentBtnClick(e.target.dataset.comment)
-    }else if(e.target.dataset.deleteComment) {
+    }
+    else if(e.target.dataset.deleteComment) {
         deleteComment(e.target.dataset.deleteComment)
     }
     
@@ -47,9 +49,6 @@ function handleLikeClick(tweetId){
         targetTweetObj.likes++ 
     }
     targetTweetObj.isLiked = !targetTweetObj.isLiked
-    
-   
-    
     render()
 }
 
@@ -127,18 +126,12 @@ function deleteTweet(deleteId) {
     render()
 }
 
-function deleteComment(commentId) {
-       
-    newTweetData.forEach(function(tweet){
-
-     tweet.replies = tweet.replies.filter(function(reply){
-
-        return reply.uuid !== commentId })
-        
-    })
-    
-    render()
-  
+function deleteComment(commentId) {       
+    newTweetData.forEach(tweet => {
+     tweet.replies = tweet.replies.filter(reply => {
+        return reply.uuid !== commentId })        
+    })    
+    render()  
 }
 
 

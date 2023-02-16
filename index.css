@@ -159,11 +159,14 @@ form {
     margin-bottom: 30px;
     width: 190px;
     position: relative;       
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    
 }
 
 .comment-input {
     margin: 0px;
-    padding: 5px;
+    padding: 0 0 0 4px;
     width: 100%;
     outline: none;
     height: 30px;

@@ -5,6 +5,7 @@ let tweetsFromLS = JSON.parse(localStorage.getItem("tweetsData"))
 let newTweetData = tweetsData
 
 if(tweetsFromLS) {
+    console.log(tweetsFromLS)
     newTweetData = tweetsFromLS
 }
 // if(tweetsFromLS.length > 0) {

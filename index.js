@@ -4,15 +4,11 @@ import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 let tweetsFromLS = JSON.parse(localStorage.getItem("tweetsData"))
 let newTweetData = tweetsData
 
-if(tweetsFromLS) {
-    console.log(tweetsFromLS)
-    newTweetData = tweetsFromLS
+if(tweetsFromLS && tweetsFromLS.length > 0) {
+     newTweetData = tweetsFromLS
+}else if(tweetsFromLS.length === 0) {
+     newTweetData = tweetsData
 }
-// if(tweetsFromLS.length > 0) {
-//     newTweetData = tweetsFromLS
-// }else if(tweetsFromLS.length === 0) {
-//     newTweetData = tweetsData
-// }
 
 document.addEventListener('click', function(e){
     if(e.target.dataset.like){

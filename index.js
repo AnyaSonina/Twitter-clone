@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 let tweetsFromLS = JSON.parse(localStorage.getItem("tweetsData"))
 let newTweetData = tweetsData
 
-if(tweetsFromLS.length > 0) {
+if(tweetsFromLS) {
     newTweetData = tweetsFromLS
 }
 // if(tweetsFromLS.length > 0) {

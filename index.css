@@ -1,0 +1,190 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+::placeholder {
+    font-size: 15px;
+}
+/* typography and icons */
+
+h1{
+    color: #0F8CDF;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+i{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.fa-solid{
+    color: #999;
+}
+
+.fa-trash-can:hover, 
+.fa-trash-can:active {
+    color: red;
+}
+
+.liked{
+    color: red;
+}
+
+.retweeted {
+  color: limegreen;
+}
+
+/* layout */
+
+main, header{
+    width: 290px;
+    margin: 0 auto;
+}
+
+header{
+    padding-bottom: 25px;
+}
+
+.tweet-input-area {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* textareas + btn */
+
+textarea{
+    border: none;
+    resize: none;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+button{
+    background-color: #1DA1F2;
+    border: none;
+    color: white;
+    padding: 10px 19px;
+    border-radius: 20px;
+    width: 100%; 
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* tweet */
+
+.tweet{
+    border-top: 1px solid lightgray;
+    padding: 20px 0 0 0;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.tweet-inner{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.tweet-details{
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.tweet-detail{
+    display: flex;
+    gap: 4px;
+}
+
+.tweet-reply{
+    border-top: 1px solid lightgray;
+    padding: 20px 0 0 0px;
+    margin: 10px 0 10px 40px;
+    max-width: 80%;
+   
+}
+
+.comment_text .tweet-text{
+    max-width: 160px;
+  overflow-wrap: break-word;
+}
+
+
+.handle{
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+    margin-top: 0;
+}
+
+.tweet-text{
+    width: 207px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.comment_text {
+    width: 200px;
+    height: fit-content;
+}
+/* images */
+
+.profile-pic{
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    width: 48px;
+}
+
+/* utility */
+.hidden{
+    display: none;
+}
+
+
+/*form*/
+form {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    width: 190px;
+    position: relative;       
+}
+
+.comment-input {
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+    outline: none;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+  
+.comment_btn__submit {
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    right: 0;
+    z-index: 2;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #1DA1F2;
+    transform: translateX(2px);
+    width: 35%;
+    margin-left: 5px;
+}
+  

@@ -6,8 +6,8 @@ let newTweetData = tweetsData
 
 if(tweetsFromLS && tweetsFromLS.length > 0) {
      newTweetData = tweetsFromLS
-}else if(tweetsFromLS.length === 0) {
-     newTweetData = tweetsData
+}else if(!tweetsFromLS) {
+    newTweetData = tweetsData
 }
 
 document.addEventListener('click', function(e){
